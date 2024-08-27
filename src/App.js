@@ -1,9 +1,16 @@
 function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
+  function handleClick() {
+    alert('You clicked me!');
+  }
 
-}export default function MyApp() {
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+
+export default function MyApp() {
   return (
     <div>
       <h1>Welcome to my app</h1>
